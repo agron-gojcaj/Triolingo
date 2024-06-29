@@ -1,0 +1,261 @@
+* {
+    border: 3px;
+    margin: 3px;
+    padding: 3px;
+  }
+
+  body {
+    display: block;
+    margin: 8px;
+    background-image: url('../assets/output-onlinepngtools.png'); /* Replace 'background.jpg' with the path to your image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+  body.index {
+    font-family:monospace;;
+  }
+  
+  body.story {
+    /* background: linear-gradient(#3a8df485, #81b6f885, #eff3f785, #bed7f685 #3a8df485);*/
+    font-family:monospace;;
+  }
+  
+  .container-wrapper {
+    flex: 1;
+    display: flex;
+    top: 10px;
+    justify-content: space-between; /* Adjust as needed */
+    flex-direction: row;
+    max-width: 1100px; /* Adjust the max-width as needed */
+    margin: 10px auto;
+    padding: 0px;
+    overflow: hidden;
+    background-color: transparent;
+    border-radius: 20px;
+    align-items: center;
+    text-align: center;
+    font-family:monospace;
+    font-size: 18px;
+  }
+
+  .container-wrapper2 {
+    display: flex;
+    justify-content: space-between; /* Adjust as needed */
+    flex-direction: row;
+    max-width: 1100px; /* Adjust the max-width as needed */
+    margin: 20px auto;
+    padding: 10px;
+    overflow: hidden;
+    background-color: rgba(79, 140, 238, 0.714);
+    border-radius: 20px;
+    align-items: center;
+    text-align: center;
+    font-family: monospace;
+    font-size: 15px;
+  }
+
+  .container, .container2 {
+    flex: 1; /* Allow containers to grow equally */
+    text-align: left;
+    max-width: 1100px;
+    background: rgb(203, 216, 247);
+    border-radius: 20px;
+    padding: 10px;
+  }
+  
+  .container {
+    margin-right: 20px; /* Adjust as needed */
+    
+  }
+  
+  .container2 {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: row; /* Adjust as needed */
+  }
+
+  .container3 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    max-width: 1100px;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 20px; /* Adjust top margin as needed */
+    margin-bottom: 20px;
+  }
+  .container-row {
+    display: flex;
+    flex-wrap: wrap; /* Allow containers to wrap to the next line */
+    justify-content: center;
+    margin-bottom: 20px; /* Add margin between rows */
+}
+
+  .container4, .container5, .container6,.container7,.container8,.container9,.container10,.container11{
+    flex: 1; /* Allow containers to grow equally */
+    flex-direction: column;
+    text-align: center;
+    max-width: 1100px;
+    background: rgb(203, 216, 247);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+  }
+
+  .navbar {
+    position: relative;
+    width: fit-content;
+    height: 60px;
+    max-width: 1100px; /* Adjust the max-width as needed */
+    margin: 20px auto;
+    padding: 10px;
+    overflow: hidden;
+    background-color: rgba(79, 140, 238, 0.714);
+    border-radius: 20px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    font-family: monospace;
+    font-size: 50px;
+  }
+  
+  .navOption {
+    vertical-align: middle;
+    font-family: monospace;
+    font-size: 80px;
+  }
+  
+  .navbar a {
+    margin: 0 40px;
+    color: rgb(7, 4, 39);
+    text-decoration: none;
+    font-size: 25px;
+    height: auto;
+  }
+  
+  .navbar a:hover {
+    background-color: rgba(228, 229, 247, 0.863);
+    transition: 0.7s ease;
+  }
+  
+  .myquote {
+    padding: 50px;
+    color: rgb(7, 4, 39);
+    text-align: center;
+    font-size: 50px;
+    font-family:monospace;
+  }
+  
+  .title {
+    font-size: 110px;
+    text-align: center;
+    font-family: monospace;
+    color: #021e3a;
+  }
+
+  #section1 {
+    padding: 10px;
+    margin-bottom: 20px;
+    min-height:100vh; /* Ensure the section covers at least the viewport height */
+    width:99%  ; /* Ensure the section covers the entire viewport width */
+    position: relative; /* Position the section relative to its normal position */
+    text-align: center;
+    display: flex; /* Use flexbox to center content */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; 
+    overflow-x: hidden;
+    font-family: monospace;
+
+}
+
+.top-button {
+  position:absolute;
+  justify-content: right;
+  top: 25px; /* Adjust this value as needed */
+  right: 50px; /* Adjust this value as needed */
+  width: 120px;
+  height: 60px;
+  background-color: rgba(79, 140, 238, 0.714);
+  border-radius: 20px;
+  font-size: 20px;
+  max-width: 1100px; /* Adjust the max-width as needed */
+  margin: 20px auto;
+  padding: 10px;
+  overflow: hidden;
+  background-color: rgba(79, 140, 238, 0.714);
+  align-items: center;
+  text-align: center;
+  font-family: monospace;
+}
+
+
+#section2 {
+  padding: 10px;
+  margin-bottom: 20px;
+  min-height:100vh; /* Ensure the section covers at least the viewport height */
+  width:99%  ; /* Ensure the section covers the entire viewport width */
+  position: relative; /* Position the section relative to its normal position */
+  overflow-x: hidden;
+}
+
+#section3 {
+  padding: 10px;
+  margin-bottom: 20px;
+  min-height:100vh; /* Ensure the section covers at least the viewport height */
+  width:99%  ; /* Ensure the section covers the entire viewport width */
+  position: relative; /* Position the section relative to its normal position */
+  overflow-x: hidden;
+}
+
+#section4 {
+  padding: 10px;
+  margin-bottom: 20px;
+  min-height:100vh; /* Ensure the section covers at least the viewport height */
+  width:99%  ; /* Ensure the section covers the entire viewport width */
+  position: relative; /* Position the section relative to its normal position */
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center; /* Centers items horizontally */
+  align-items: center; 
+}
+
+.round-image {
+  border-radius: 50%; /* Makes the images round */
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column; /* Align items vertically */
+  align-items: center; /* Center items horizontally */
+  text-align: center; /* Center text horizontally */
+  padding: 10px;
+  margin: 10px;
+  background-color: transparent;
+}
+
+.devs {
+  font-family: monospace;
+  font-size: 50px;
+}
+
+#signInButton {
+  right: 25px; /* Adjust as needed */
+  position: relative;
+  width: fit-content;
+  height: 60px;
+  max-width: 1100px; /* Adjust the max-width as needed */
+  margin: 20px auto;
+  padding: 10px;
+  background-color: rgba(79, 140, 238, 0.714);
+  border-radius: 20px;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  font-family: monospace;
+  font-size: 50px;
+}

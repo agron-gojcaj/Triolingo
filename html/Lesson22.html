@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 1: Basic English Grammar</title>
+    <link rel="stylesheet" type="text/css" href="../css/modules.css">
+</head>
+<body>
+    <div class = "container-lesson">
+        <div class="module-header">
+            <img src="../assets/united-states.png" alt="United States Flag" height="80" width="auto" />
+            <h1>Lesson 1: Basic English Grammar</h1>
+        </div>
+        
+        <div class="translation">
+            <h3 style="color: rgb(36, 69, 145)">Learning they're, there, and their!:</h3>
+            <br>
+            <p><strong>English:</strong> The possessive pronoun that means "belonging to them"</p>
+            <br>
+            <label for="textToTranslate">Enter correct word:</label>
+            <br><br>
+            <input type="text" id="textToTranslate"><br>
+            <span id="error" style="color: red; display: none;"><br>Incorrect translation. Please try again.</span><br><br>
+           
+            <div class="three-buttons">
+                <button type="button" onclick="checkTranslation()">Translate & Check</button><br>
+                <button onclick="displayHint()">Hint</button><br><br>
+                <button id="completeButton" onclick="completeLesson()" disabled>Complete Lesson</button><br><br> 
+            </div>
+            <p id="hint" style="display: none;"><strong>Hint:</strong> Can be used in the pretense of saying a car belongs to someone.</p>
+        </div>
+    
+    <!-- Go Back Home button -->
+    <div class="go-back-home-container">
+        <a href="./modules.html" class="go-back-home-button">Go Back Home</a>
+    </div>
+
+    <script>
+        async function checkTranslation() {
+            const userTranslation = document.getElementById('textToTranslate').value.trim();
+            if (userTranslation === '') {
+                alert('Please enter your translation.');
+                return;
+            }
+            
+            const correctTranslation = "Their";
+            const userTranslationLowerCase = userTranslation.toLowerCase();
+            const correctTranslationLowerCase = correctTranslation.toLowerCase();
+            
+            if (userTranslationLowerCase === correctTranslationLowerCase) {
+                alert('Correct! Well done.');
+                document.getElementById('completeButton').disabled = false;
+                document.getElementById('error').style.display = 'none'; // Hide error message if correct
+            } else {
+                document.getElementById('error').style.display = 'block'; // Show error message if incorrect
+            }
+        }
+
+        function completeLesson() {
+            // Redirect to Lesson 2
+            window.location.href = 'lesson23.html';
+        }
+
+        function displayHint() {
+            document.getElementById('hint').style.display = 'block';
+        }
+    </script>
+</body>
+</html>

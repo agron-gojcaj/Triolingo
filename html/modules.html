@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triolingo-Modules</title>
+    <link rel="stylesheet" href="../css/modules.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="../index.html" class="navOption">Home</a>
+        <a href="../html/modules.html" class="navOption">Modules</a>
+        <a href="./translate.html" class="navOption">Translate</a>
+    </nav>
+
+    <div class="sectionM">
+        <div class="language-module">
+            <div class="module-header">
+                <img src="../assets/united-states.png" alt="United States Flag" height="80" width="auto" />
+                <h1>English</h1>
+        </div>
+            <div id="myProgress">
+                <div class="progress-text" id="progressText" style="color: rgb(138, 180, 234)">0%</div>
+            </div>
+            <a href="./Lesson22.html" class="start-learning-button">Start Learning</a>
+        </div>
+    </div>
+
+    <div class="sectionM">
+        <div class="language-module">
+            <div class="module-header">
+                <img src="../assets/spain.png" alt="United States Flag" height="80" width="auto" />
+                <h1>Spanish</h1>
+        </div>
+            <div id="myProgress">
+                <div class="progress-text" id="progressText" style="color: rgb(138, 180, 234)">0%</div>
+            </div>
+            <a href="./Lesson1.html" class="start-learning-button">Start Learning</a>
+        </div>
+    </div>
+
+    <div class="sectionM">
+        <div class="language-module">
+            <div class="module-header">
+                <img src="../assets/china.png" alt="United States Flag" height="80" width="auto" />
+                <h1>Chinese</h1>
+        </div>
+            <div id="myProgress">
+                <div class="progress-text" id="progressText" style="color: rgb(138, 180, 234)">0%</div>
+            </div>
+            <a href="./Lesson4.html" class="start-learning-button">Start Learning</a>
+        </div>
+    </div>
+
+    <div class="sectionM">
+        <div class="language-module">
+            <div class="module-header">
+                <img src="../assets/iraq.png" alt="United States Flag" height="80" width="auto" />
+                <h1>Arabic</h1>
+        </div>
+            <div id="myProgress">
+                <div class="progress-text" id="progressText" style="color: rgb(138, 180, 234)">0%</div>
+            </div>
+            <a href="./Lesson7.html" class="start-learning-button">Start Learning</a>
+        </div>
+    </div>
+
+    <div class="sectionM">
+        <div class="language-module">
+            <div class="module-header">
+                <img src="../assets/south-korea.png" alt="United States Flag" height="80" width="auto" />
+                <h1>Korean</h1>
+        </div>
+            <div id="myProgress">
+                <div class="progress-text" id="progressText" style="color: rgb(138, 180, 234)">0%</div>
+            </div>
+            <a href="./Lesson10.html" class="start-learning-button">Start Learning</a>
+        </div>
+    </div>
+
+    <div class="sectionM">
+        <div class="language-module">
+            <div class="module-header">
+                <img src="../assets/france.png" alt="United States Flag" height="80" width="auto" />
+                <h1>French</h1>
+        </div>
+            <div id="myProgress">
+                <div class="progress-text" id="progressText" style="color: rgb(138, 180, 234)">0%</div>
+            </div>
+            <a href="./Lesson13.html" class="start-learning-button">Start Learning</a>
+        </div>
+    </div>
+
+    <div class="sectionM">
+        <div class="language-module">
+            <div class="module-header">
+                <img src="../assets/italy.png" alt="United States Flag" height="80" width="auto" />
+                <h1>Italian</h1>
+        </div>
+            <div id="myProgress">
+                <div class="progress-text" id="progressText" style="color: rgb(138, 180, 234)">0%</div>
+            </div>
+            <a href="./Lesson16.html" class="start-learning-button">Start Learning</a>
+        </div>
+    </div>
+
+    <div class="sectionM">
+        <div class="language-module">
+            <div class="module-header">
+                <img src="../assets/flag.png" alt="United States Flag" height="80" width="auto" />
+                <h1>Albanian</h1>
+        </div>
+            <div id="myProgress">
+                <div class="progress-text" id="progressText" style="color: rgb(138, 180, 234)">0%</div>
+            </div>
+            <a href="./Lesson19.html" class="start-learning-button">Start Learning</a>
+        </div>
+    </div>
+
+    <script>
+        // Update progress percentage for each language module
+        function updateProgress(lessonCompleted, totalLessons, progressTextId) {
+            var progress = Math.round((lessonCompleted / totalLessons) * 100);
+            document.getElementById(progressTextId).innerText = progress + "%";
+        }
+
+        // Call updateProgress function for each language module
+        updateProgress(0, 22, "progressText1");
+        updateProgress(0, 22, "progressText2");
+        // Add similar calls for other language modules
+    </script>
+    
+</body>
+</html>

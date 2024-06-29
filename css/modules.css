@@ -1,0 +1,284 @@
+/* Add this CSS to modules.css */
+
+.start-learning-container {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+
+
+/* Resetting styles for all elements */
+* {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body styles */
+body {
+    display: block;
+    margin: 8px;
+    background-image: url('../assets/output-onlinepngtools.png'); /* Adjust the path to your cloud image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+/* Module section styles */
+.sectionM {
+  display: flex;
+  max-width: 99%;
+  flex-direction:column;
+  border-radius: 20px;
+  padding: 10px;
+  margin-top: 20px; /* Adjust top margin as needed */
+  margin-bottom: 20px;
+  background-color:transparent;
+  align-items: center;
+  text-align: center;
+  font-family:monospace;
+  font-size: 18px;
+  }
+  
+
+  .navbar {
+    position: relative;
+    width: fit-content;
+    height: 60px;
+    max-width: 1100px; /* Adjust the max-width as needed */
+    margin: 20px auto;
+    padding: 10px;
+    overflow: hidden;
+    background-color: rgba(79, 140, 238, 0.714);
+    border-radius: 20px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    font-family: monospace;
+    font-size: 50px;
+  }
+
+.navOption {
+  vertical-align: middle;
+  font-family: monospace;
+  font-size: 80px;
+}
+
+.navbar a {
+  margin: 0 40px;
+  color: rgb(7, 4, 39);
+  text-decoration: none;
+  font-size: 25px;
+  height: auto;
+}
+
+.navbar a:hover {
+  background-color: rgba(228, 229, 247, 0.863);
+  transition: 0.7s ease;
+}
+
+#section1 {
+  padding: 10px;
+  margin-bottom: 20px;
+  min-height:100vh; /* Ensure the section covers at least the viewport height */
+  width:99%  ; /* Ensure the section covers the entire viewport width */
+  position: relative; /* Position the section relative to its normal position */
+  text-align: center;
+  display: flex; /* Use flexbox to center content */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; 
+  overflow-x: hidden;
+  font-family: monospace;
+} 
+
+.language-module {
+  margin-top: 20px; /* Adjust this value to increase or decrease space between modules */
+  justify-content: center;
+  width: 700px; /* Set the width to 80% of the container */
+  max-width: 800px; /* Set a maximum width for the module */
+  background-color: rgb(188, 212, 234); /* Add a background color for better visibility */
+  border-radius: 10px; /* Add border radius for rounded corners */
+  padding: 20px; /* Add padding for spacing inside the module */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.module-header {
+  display: flex;
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally */
+  margin-bottom: 0px; /* Add margin to separate header from progress */
+  font-size: 22px;
+}
+
+.module-header h1 {
+  margin-left: 20px; /* Add space between the text and image */
+}
+
+/* Progress bar styles */
+.progress-and-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#myProgress {
+    width: 100%;
+    background-color: rgb(232, 238, 244);
+    margin-bottom: 10px;
+    border-radius: 20px;
+    height: 25px;
+}
+
+#progress-text{
+  text-align:left;
+}
+
+
+/* Buttons container */
+.buttons {
+    display: flex;
+}
+
+/* Start Learning button styles */
+.start-learning-container, .go-back-home-container {
+    margin-right: 10px;
+}
+
+.start-learning-button,
+.go-back-home-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgba(79, 140, 238, 0.714);
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.container-lesson{
+  display: flex;
+  max-width: 99%;
+  flex-direction:column;
+  border-radius: 20px;
+  padding: 10px;
+  margin-top: 100px; /* Adjust top margin as needed */
+  margin-bottom: 20px;
+  background-color:transparent;
+  align-items: center;
+  text-align: center;
+  font-family:monospace;
+  font-size: 18px;
+
+}
+
+.translation{
+  margin-top: 20px; /* Adjust this value to increase or decrease space between modules */
+  justify-content: center;
+  width: 700px; /* Set the width to 80% of the container */
+  max-width: 800px; /* Set a maximum width for the module */
+  background-color: rgb(188, 212, 234); /* Add a background color for better visibility */
+  border-radius: 10px; /* Add border radius for rounded corners */
+  padding: 20px; /* Add padding for spacing inside the module */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+#textToTranslate{
+  border-radius: 10px;
+  width: 300px;
+  height: 40px;
+}
+
+.three-buttons{
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    margin-bottom: 20px; 
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .three-buttons button {
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 10px 20px;
+    background-color: rgba(79, 140, 238, 0.714);
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: monospace;
+    font-size: 18px;
+}
+
+.completion-box{
+  margin-top: 20px; /* Adjust this value to increase or decrease space between modules */
+  justify-content: center;
+  width: 700px; /* Set the width to 80% of the container */
+  max-width: 800px; /* Set a maximum width for the module */
+  background-color: rgb(188, 212, 234); /* Add a background color for better visibility */
+  border-radius: 10px; /* Add border radius for rounded corners */
+  padding: 20px; /* Add padding for spacing inside the module */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.completion-box p{
+  font-size: 20px;
+}
+
+.translate-box{
+  display: flex;
+  margin-top: 50px; /* Adjust this value to increase or decrease space between modules */
+  justify-content: center;
+  flex-direction: column;
+  width: 700px; /* Set the width to 80% of the container */
+  max-width: 800px; /* Set a maximum width for the module */
+  background-color: rgb(188, 212, 234); /* Add a background color for better visibility */
+  border-radius: 10px; /* Add border radius for rounded corners */
+  padding: 20px; /* Add padding for spacing inside the module */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  align-items: center;
+}
+
+.buttonTranslate{
+  padding: 10px 20px;
+  background-color: rgba(79, 140, 238, 0.714);
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: monospace;
+  font-size: 16px;
+}
+
+#targetLanguage{
+  background-color:rgb(255, 255, 255);
+  border-radius: 10px;
+  padding: 18px 65px;
+  font-family: monospace;
+  font-size: 15px;
+}
+
+.translated-text{
+  background-color:rgb(255, 255, 255);
+  border-radius: 10px;
+  padding: 20px 90px;
+  font-family: monospace;
+  font-size: 15px;
+
+}
+
+#textToTranslate{
+  background-color:rgb(255, 255, 255);
+  border-radius: 10px;
+  padding: 10px;
+  font-family: monospace;
+  font-size: 15px;
+}

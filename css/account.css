@@ -1,0 +1,64 @@
+* {
+    border: 3px;
+    margin: 3px;
+    padding: 3px;
+  }
+
+  body {
+    display: block;
+    margin: 8px;
+    background-image: url('../assets/output-onlinepngtools.png'); /* Replace 'background.jpg' with the path to your image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.navbar {
+  position: relative;
+  width: fit-content;
+  height: 60px;
+  max-width: 1100px; /* Adjust the max-width as needed */
+  margin: 20px auto;
+  padding: 10px;
+  overflow: hidden;
+  background-color: rgba(79, 140, 238, 0.714);
+  border-radius: 20px;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  font-family: monospace;
+  font-size: 50px;
+}
+  
+  .navOption {
+    vertical-align: middle;
+    font-family: monospace;
+    font-size: 80px;
+  }
+  
+  .navbar a {
+    margin: 0 40px;
+    color: rgb(7, 4, 39);
+    text-decoration: none;
+    font-size: 25px;
+    height: auto;
+  }
+  
+  .navbar a:hover {
+    background-color: rgba(228, 229, 247, 0.863);
+    transition: 0.7s ease;
+  }
+
+  #section1 {
+    padding: 10px;
+    margin-bottom: 20px;
+    min-height:100vh; /* Ensure the section covers at least the viewport height */
+    width:99%  ; /* Ensure the section covers the entire viewport width */
+    position: relative; /* Position the section relative to its normal position */
+    text-align: center;
+    display: flex; /* Use flexbox to center content */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; 
+    overflow-x: hidden;
+    font-family: monospace;
+  }

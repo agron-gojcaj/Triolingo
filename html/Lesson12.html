@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 3: Advanced Korean Translation</title>
+    <link rel="stylesheet" type="text/css" href="../css/modules.css">
+</head>
+<body>
+    <div class = "container-lesson">
+        <div class="module-header">
+            <img src="../assets/south-korea.png" alt="United States Flag" height="80" width="auto" />
+            <h1>Lesson 3: Advanced Korean Translation</h1>
+        </div>
+        <div class="translation">
+            <h3 style="color: rgb(36, 69, 145)">Translate the following sentence from Korean to English:</h3>
+            <br>
+            <p><strong>Korean:</strong> nae gang-ajineun ije mag seumuldu sal-i doeeossseubnida</p>
+            <br>
+            <label for="textToTranslate">Enter translation:</label><br>
+            <br><br>
+            <input type="text" id="textToTranslate"><br>
+            <span id="error" style="color: red; display: none;">Incorrect translation. Please try again.</span><br><br>
+       
+            <div class="three-buttons">
+                <button onclick="checkTranslation()">Translate & Check</button><br><br>
+                <button onclick="displayHint()">Hint</button><br><br>
+                <button id="completeButton" onclick="completeLesson()" disabled>Complete Lesson</button><br><br>
+            </div>
+            <p id="hint" style="display: none;"><strong>Hint:</strong> The Korean word "seumul dul" means "Twenty two" in English.</p>
+        </div>
+
+        <!-- Go Back Home button -->
+        <div class="go-back-home-container">
+            <a href="./modules.html" class="go-back-home-button">Go Back Home</a>
+        </div>
+    </div>
+
+    <script>
+        async function checkTranslation() {
+            const userTranslation = document.getElementById('textToTranslate').value.trim();
+            if (userTranslation === '') {
+                alert('Please enter your translation.');
+                return;
+            }
+            
+            const correctTranslation = "My dog just turned twenty two years old.";
+            const userTranslationLowerCase = userTranslation.toLowerCase();
+            const correctTranslationLowerCase = correctTranslation.toLowerCase();
+            
+            if (userTranslationLowerCase === correctTranslationLowerCase) {
+                alert('Correct! Well done.');
+                document.getElementById('completeButton').disabled = false;
+                document.getElementById('error').style.display = 'none'; // Hide error message if correct
+            } else {
+                document.getElementById('error').style.display = 'inline'; // Show error message if incorrect
+            }
+        }
+
+        function completeLesson() {
+            // Redirect to completion page
+            window.location.href = 'completion.html'; // Redirect to completion page
+        }
+
+        function displayHint() {
+            document.getElementById('hint').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
